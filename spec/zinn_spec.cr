@@ -1,9 +1,9 @@
 require "./spec_helper"
 
-describe Zinn do
-  # TODO: Write tests
-
-  it "works" do
-    true.should eq(true)
+describe "Zinn" do
+  describe "#size" do
+    it "correctly reports the number of elements in the Array" do
+      [1, 2, 3].size.should eq 3
+    end
   end
 end
