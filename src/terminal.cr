@@ -2,7 +2,7 @@
   require "./impure/unix.cr"
 {% end %}
 
-module AnsiTerm
+module Terminal
   extend self
 
   def size : {Int32, Int32}
@@ -19,5 +19,27 @@ module AnsiTerm
   end
 
   def clear
+  end
+
+  module Cursor
+    extend self
+
+    private ESC = "\x1b"
+
+    def up(lines : Int32)
+      print "#{ESC}[#{lines}A"
+    end
+
+    def down(lines : Int32)
+      print "#{ESC}[#{lines}B"
+    end
+
+    def right(columns : Int32)
+      print "#{ESC}[#{columns}C"
+    end
+
+    def left(columns : Int32)
+      print "#{ESC}[#{columns}D"
+    end
   end
 end
