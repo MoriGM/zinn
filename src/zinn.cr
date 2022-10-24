@@ -1,3 +1,3 @@
 require "./term.cr"
 
-AnsiTerm.clear()
+AnsiTerm.clear
