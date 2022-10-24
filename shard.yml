@@ -1,0 +1,13 @@
+name: zinn
+version: 0.1.0
+
+authors:
+  - MoriGM <30366747+MoriGM@users.noreply.github.com>
+
+targets:
+  zinn:
+    main: src/zinn.cr
+
+crystal: 1.5.1
+
+license: MIT
