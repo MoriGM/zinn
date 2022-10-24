@@ -1,6 +1,3 @@
-# TODO: Write documentation for `Zinn`
-module Zinn
-  VERSION = "0.1.0"
+require "./term.cr"
 
-  # TODO: Put your code here
-end
+AnsiTerm.clear()
