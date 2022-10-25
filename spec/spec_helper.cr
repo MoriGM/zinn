@@ -1,2 +1,2 @@
 require "spec"
-require "../src/zinn"
+require "../src/terminal.cr"
